@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('svg/background.svg') #edeff0;
+  background: url('svgs/background.svg') #edeff0;
 }
 
 #container {
@@ -88,6 +88,16 @@ footer {
   height: 120px;
 }
 
+.logo-text	{
+  display: inline-block;
+}
+  
+.logo-heading {
+    color: #EAAA7F;
+	display: none;
+}
+
+
 /*DOG-IMAGES---------*/
 .dog-img  {
   width: 170px;
@@ -158,19 +168,14 @@ nav ul li a .st0  {
 }
 
 /*MEDIA QUERIES--------*/
-@media (max-width: 425px) {
-  .logo-text  {
-    display: none;
-  }
 
-  .logo-heading {
-    color: #EAAA7F;
-  }
-}
+@media (max-width: 424px) {
+	.logo-heading {
+		display: block;
+	}
 
-@media (min-width: 426px) {
-  .logo-heading {
-    display: none;
-  }
+	.logo-text  {
+		display: none;
+	}
 }
 
